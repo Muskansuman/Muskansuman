@@ -1,7 +1,7 @@
 /* ── Design tokens ── */
 :root {
-  --bg: #f8fafc;
-  --bg-muted: #f1f5f9;
+  --bg: #ffffff;
+  --bg-muted: #ffffff;
   --surface: #ffffff;
   --surface-elevated: #ffffff;
   --text: #0f172a;
@@ -86,7 +86,7 @@ ul { list-style: none; }
   top: 0;
   z-index: 100;
   height: var(--header-h);
-  background: rgba(248, 250, 252, 0.9);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
@@ -612,7 +612,7 @@ ul { list-style: none; }
 /* ── Contact ── */
 .contact-section { padding-bottom: 5rem; }
 .contact-card {
-  background: linear-gradient(180deg, #ffffff, #f8fbff);
+  background: #ffffff;
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 6px);
   padding: 2.5rem;
