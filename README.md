@@ -3,7 +3,7 @@
 # Hi, I'm Muskan Suman 👋
 ### AI / ML Engineer · Computer Vision · LLM Systems
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-2563eb?style=for-the-badge&logo=googlechrome&logoColor=white)](https://polite-semifreddo-820f57.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-2563eb?style=for-the-badge&logo=vercel&logoColor=white)](https://muskansuman-ai.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muskansuman29)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:muskan.suman2907@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Muskansuman)
@@ -14,14 +14,12 @@
 
 ## 🌐 Portfolio Website
 
-<a href="https://polite-semifreddo-820f57.netlify.app/" target="_blank">
+<a href="https://muskansuman-ai.vercel.app/" target="_blank">
   <img src="./assets/portfolio-preview.png" alt="Muskan Suman Portfolio Preview" width="100%" />
 </a>
 
 <p align="center">
-  <a href="https://polite-semifreddo-820f57.netlify.app/"><strong>🔗 View Live Portfolio (Netlify)</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://muskansuman.github.io/new/"><strong>🔗 View on GitHub Pages</strong></a>
+  <a href="https://muskansuman-ai.vercel.app/"><strong>🔗 View Live Portfolio →</strong></a>
 </p>
 
 ---
