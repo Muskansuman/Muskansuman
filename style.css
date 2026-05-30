@@ -688,7 +688,7 @@ ul { list-style: none; }
 /* ── Contact ── */
 .contact-section { padding-bottom: 5rem; }
 .contact-card {
-  background: #ffffff;
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 6px);
   padding: 2.5rem;
