@@ -1,13 +1,13 @@
 const PROFILE = {
   name: "Muskan Suman",
   initials: "MS",
-  title: "AI / ML Engineer",
+  title: "AI/ML Engineer",
   subtitle: "Computer Vision · LLM Systems · MLOps",
   tagline:
     "AI/ML Engineer who ships — from training custom neural networks to deploying scalable inference systems on AWS. I build production-grade ADAS pipelines and LLM-powered assistants, owning the full stack from model to metal.",
   email: "muskan.suman2907@gmail.com",
   phone: "+91 6265905745",
-  location: "Gurgaon, Haryana, India",
+  location: "Gurugram, Haryana, India",
   github: "https://github.com/Muskansuman",
   linkedin: "https://www.linkedin.com/in/muskansuman29",
   resumeUrl: "./assets/Muskansuman.pdf",
@@ -29,16 +29,16 @@ const STATS = [
 ];
 
 const ABOUT = [
-  "AI/ML Engineer who ships — from training custom neural networks to deploying scalable inference systems on AWS. Passionate about pushing intelligence to the edge, where latency is real and failure isn't an option.",
+  "I specialize in taking machine learning from research to reliable production — designing models, then deploying them as low-latency services on the cloud and at the edge, where failure isn't an option.",
   "Built production-grade ADAS pipelines processing real-time safety events for commercial fleets, and LLM-powered assistants using RAG, multi-agent architecture, and vector search.",
-  "M.Tech from IIT Jodhpur. Not just a researcher — an engineer who owns the full stack, from model to metal.",
+  "M.Tech from IIT Jodhpur — equally comfortable with the math behind a model and the infrastructure that serves it.",
 ];
 
 const HIGHLIGHTS = [
   { label: "Education", value: "M.Tech — Robotics & Mobility Systems, IIT Jodhpur" },
   { label: "Current Role", value: "AI/ML Engineer at Novus Hi-Tech, Gurugram" },
   { label: "Specialization", value: "ADAS, Driver Monitoring, RAG & LLM Systems" },
-  { label: "Location", value: "Gurgaon, Haryana, India" },
+  { label: "Location", value: "Gurugram, Haryana, India" },
 ];
 
 const SKILLS = [
@@ -76,7 +76,7 @@ const PROJECTS = [
       "Production RAG system using LLMs, AWS Bedrock, and pgvector on Aurora PostgreSQL for real-time querying of structured and unstructured fleet data. Scalable backend with workflow orchestration, dynamic tool calling, semantic retrieval, and multi-agent integration.",
     metrics: ["Real-time RAG", "Multi-agent tools", "Low-latency inference"],
     stack: ["AWS Bedrock", "pgvector", "Aurora PostgreSQL", "FastAPI"],
-    github: "https://github.com/Muskansuman",
+    github: null,
   },
   {
     category: "ADAS / Computer Vision",
@@ -85,7 +85,7 @@ const PROJECTS = [
       "Production-scale ADAS pipeline using YOLOv11, YOLOv11-Pose, OpenCV, FastAPI, AWS Lambda, DynamoDB, and EC2 to re-validate safety events (phone use, drowsiness, smoking, FCW, lane departure). Multi-stage inference with object detection, pose estimation, geometric reasoning, and temporal filtering.",
     metrics: ["Object detection + pose", "Temporal filtering", "Async queue service"],
     stack: ["YOLOv11", "YOLOv11-Pose", "FastAPI", "AWS Lambda"],
-    github: "https://github.com/Muskansuman",
+    github: null,
   },
   {
     category: "Deep Learning",
@@ -94,7 +94,7 @@ const PROJECTS = [
       "Designed and trained DBDNet, a lightweight 1D-CNN with Multi-Head Self-Attention (~13K parameters) for real-time drowsiness detection. End-to-end pipeline with BlazeFace, TFLite eye-state classification, blink analytics, FastAPI, Docker, and AWS ECR.",
     metrics: ["86.7% accuracy", "0.90 F1 · 0.99 ROC-AUC", "Retention 33% → 100%"],
     stack: ["PyTorch", "Self-Attention", "TFLite", "AWS ECR"],
-    github: "https://github.com/Muskansuman",
+    github: null,
   },
   {
     category: "Computer Vision",
@@ -103,7 +103,7 @@ const PROJECTS = [
       "Synthetic data generation and augmentation pipeline using diffusion-based image synthesis and prompt engineering. Representation-space and semantic-domain analysis with CLIP embeddings, PCA visualization, and TF-IDF to study synthetic-to-real distribution shifts.",
     metrics: ["Diffusion synthesis", "CLIP + PCA analysis", "Domain adaptation"],
     stack: ["Diffusion Models", "CLIP", "PCA", "TF-IDF"],
-    github: "https://github.com/Muskansuman",
+    github: null,
   },
   {
     category: "LLM / Applied ML",

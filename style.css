@@ -29,30 +29,6 @@
   --max-width: 1140px;
 }
 
-/* ── Dark theme ── */
-[data-theme="dark"] {
-  --bg: #0b1120;
-  --bg-muted: #0f172a;
-  --surface: #131c31;
-  --surface-elevated: #182338;
-  --text: #f1f5f9;
-  --text-secondary: #cbd5e1;
-  --text-muted: #94a3b8;
-  --border: #1e293b;
-  --border-strong: #334155;
-  --primary: #60a5fa;
-  --primary-dark: #3b82f6;
-  --primary-soft: rgba(96, 165, 250, 0.12);
-  --accent: #38bdf8;
-  --success: #34d399;
-  --success-soft: rgba(52, 211, 153, 0.12);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.5);
-  --header-bg: rgba(11, 17, 32, 0.85);
-  --nav-mobile-bg: rgba(15, 23, 42, 0.98);
-}
-
 /* ── Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 1rem); }
@@ -148,32 +124,6 @@ ul { list-style: none; }
   transform: translateY(-1px);
   box-shadow: 0 10px 22px -8px var(--primary);
 }
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.theme-toggle {
-  display: grid;
-  place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: all var(--transition);
-}
-.theme-toggle:hover {
-  color: var(--primary);
-  border-color: var(--primary);
-}
-.theme-toggle svg { width: 18px; height: 18px; }
-.theme-toggle .icon-moon { display: none; }
-[data-theme="dark"] .theme-toggle .icon-sun { display: none; }
-[data-theme="dark"] .theme-toggle .icon-moon { display: block; }
 
 .nav-toggle {
   display: none;
@@ -599,6 +549,12 @@ ul { list-style: none; }
   font-weight: 600;
 }
 .project-link:hover { color: var(--primary); }
+.project-link-muted {
+  color: var(--text-muted);
+  font-weight: 500;
+  cursor: default;
+}
+.project-link-muted:hover { color: var(--text-muted); }
 .project-link-group {
   display: flex;
   gap: 0.85rem;

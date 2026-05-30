@@ -25,7 +25,6 @@ function renderSite() {
   [
     ["Location", p.location],
     ["Email", p.email],
-    ["Phone", p.phone],
   ].forEach(([label, value]) => {
     const li = el("li");
     li.innerHTML = `<span>${label}</span><span>${value}</span>`;
@@ -85,11 +84,14 @@ function renderSite() {
     const demoLink = project.demo
       ? `<a class="project-link" href="${project.demo}" target="_blank" rel="noopener">Live demo ↗</a>`
       : "";
+    const repoLink = project.github
+      ? `<a class="project-link" href="${project.github}" target="_blank" rel="noopener">View repo →</a>`
+      : `<span class="project-link project-link-muted">Company project</span>`;
     card.innerHTML = `
       <div class="project-top">
         <span class="project-category">${project.category}</span>
         <span class="project-link-group">
-          <a class="project-link" href="${project.github}" target="_blank" rel="noopener">View repo →</a>
+          ${repoLink}
           ${demoLink}
         </span>
       </div>
@@ -127,7 +129,6 @@ function renderSite() {
   const contactGrid = document.getElementById("contactGrid");
   [
     ["Email", `mailto:${p.email}`, p.email],
-    ["Phone", `tel:${p.phone.replace(/\s/g, "")}`, p.phone],
     ["Location", "#", p.location],
   ].forEach(([label, href, value]) => {
     const item = el("div", "contact-item");
@@ -201,20 +202,6 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => observer.observe(section));
-
-/* ── Theme toggle (persists preference) ── */
-const themeToggle = document.getElementById("themeToggle");
-const storedTheme = localStorage.getItem("theme");
-const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const initialTheme = storedTheme || (prefersDark ? "dark" : "light");
-document.documentElement.setAttribute("data-theme", initialTheme);
-
-themeToggle.addEventListener("click", () => {
-  const next =
-    document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", next);
-  localStorage.setItem("theme", next);
-});
 
 /* ── Typing effect for hero roles ── */
 (function typeRoles() {
