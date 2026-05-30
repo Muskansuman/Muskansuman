@@ -121,7 +121,7 @@ ul { list-style: none; }
   transition: transform var(--transition);
 }
 .brand:hover .brand-mark { transform: rotate(-6deg) scale(1.05); }
-.brand-text { font-size: 1rem; }
+.brand-text { font-size: 1rem; color: var(--primary); }
 
 .site-nav {
   display: flex;
