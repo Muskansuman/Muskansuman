@@ -4,7 +4,7 @@ const PROFILE = {
   title: "AI/ML Engineer",
   subtitle: "Computer Vision · LLM Systems · MLOps",
   tagline:
-    "AI/ML Engineer who ships — from training custom neural networks to deploying scalable inference systems on AWS. I build production-grade ADAS pipelines and LLM-powered assistants, owning the full stack from model to metal.",
+    "AI/ML Engineer specializing in computer vision and LLM systems. I build production-grade ADAS pipelines and RAG assistants owning the full stack from model to deployment.",
   email: "muskan.suman2907@gmail.com",
   phone: "+91 6265905745",
   location: "Gurugram, Haryana, India",
