@@ -10,7 +10,7 @@ const PROFILE = {
   location: "Gurgaon, Haryana, India",
   github: "https://github.com/Muskansuman",
   linkedin: "https://www.linkedin.com/in/muskansuman29",
-  resumeUrl: "./assets/resume.pdf",
+  resumeUrl: "./assets/Muskansuman.pdf",
   available: true,
 };
 
