@@ -107,18 +107,6 @@ Diffusion-based image synthesis pipeline + CLIP embeddings + PCA + TF-IDF to ana
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![Muskan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Muskansuman&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=00e5ff&icon_color=00e5ff&text_color=e2eaf4)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Muskansuman&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=00e5ff&text_color=e2eaf4)
-
-</div>
-
----
-
 <div align="center">
 
 💬 *Open to AI/ML opportunities in Computer Vision, LLM Systems, and MLOps*
