@@ -113,7 +113,10 @@ ul { list-style: none; }
   place-items: center;
   font-size: 0.85rem;
   font-weight: 700;
+  box-shadow: 0 6px 16px -8px var(--primary);
+  transition: transform var(--transition);
 }
+.brand:hover .brand-mark { transform: rotate(-6deg) scale(1.05); }
 .brand-text { font-size: 1rem; }
 
 .site-nav {
@@ -132,10 +135,15 @@ ul { list-style: none; }
 .nav-cta {
   padding: 0.55rem 1rem;
   border-radius: 999px;
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff !important;
+  box-shadow: 0 6px 16px -8px var(--primary);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
-.nav-cta:hover { background: var(--primary-dark); }
+.nav-cta:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px -8px var(--primary);
+}
 
 .header-actions {
   display: flex;
@@ -234,6 +242,10 @@ ul { list-style: none; }
   line-height: 1.08;
   letter-spacing: -0.03em;
   margin-bottom: 0.75rem;
+  background: linear-gradient(120deg, var(--text) 30%, var(--primary) 75%, var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hero-subtitle {
   font-size: 1.15rem;
@@ -270,11 +282,31 @@ ul { list-style: none; }
 }
 
 .profile-card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) + 4px);
   padding: 2rem;
   box-shadow: var(--shadow-md);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.profile-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, var(--primary), transparent 45%, transparent 55%, var(--accent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.profile-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
 }
 .profile-badge {
   display: inline-flex;
@@ -348,16 +380,24 @@ ul { list-style: none; }
   cursor: pointer;
 }
 .btn-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
+  box-shadow: 0 8px 20px -8px var(--primary);
 }
-.btn-primary:hover { background: var(--primary-dark); }
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px -10px var(--primary);
+}
 .btn-secondary {
   background: var(--surface);
   border-color: var(--border-strong);
   color: var(--text);
 }
-.btn-secondary:hover { border-color: var(--primary); color: var(--primary); }
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
 .btn-ghost {
   background: transparent;
   color: var(--text-secondary);
@@ -380,13 +420,23 @@ ul { list-style: none; }
   border-radius: var(--radius);
   padding: 1.25rem 1.5rem;
   box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--primary);
 }
 .stat-card strong {
   display: block;
   font-size: 1.6rem;
   line-height: 1.2;
   margin-bottom: 0.25rem;
-  color: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 .stat-card span {
   color: var(--text-muted);
@@ -461,6 +511,12 @@ ul { list-style: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.5rem;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-strong);
 }
 .skill-card h3 {
   font-size: 0.95rem;
@@ -478,6 +534,12 @@ ul { list-style: none; }
   color: var(--primary-dark);
   font-size: 0.8rem;
   font-weight: 600;
+  transition: transform var(--transition), background var(--transition);
+}
+.skill-tags span:hover {
+  transform: translateY(-2px);
+  background: var(--primary);
+  color: #fff;
 }
 
 /* ── Projects ── */
@@ -487,18 +549,32 @@ ul { list-style: none; }
   gap: 1.25rem;
 }
 .project-card {
+  position: relative;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.75rem;
   display: flex;
   flex-direction: column;
-  transition: box-shadow var(--transition), transform var(--transition);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--primary), var(--accent));
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform var(--transition);
 }
 .project-card:hover {
   box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  border-color: var(--border-strong);
 }
+.project-card:hover::after { transform: scaleY(1); }
 .project-top {
   display: flex;
   justify-content: space-between;
