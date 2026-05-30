@@ -85,7 +85,7 @@ function renderSite() {
       ? `<a class="project-link" href="${project.demo}" target="_blank" rel="noopener">Live demo ↗</a>`
       : "";
     const repoLink = project.github
-      ? `<a class="project-link" href="${project.github}" target="_blank" rel="noopener">View repo →</a>`
+      ? `<a class="project-link" href="${project.github}" target="_blank" rel="noopener">Repository →</a>`
       : `<span class="project-link project-link-muted">Company project</span>`;
     card.innerHTML = `
       <div class="project-top">
