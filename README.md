@@ -14,7 +14,7 @@
 
 ## 🌐 Portfolio Website
 
-<a href="https://muskansuman-ai.vercel.app/" target="_blank">
+<a href="https://muskansuman.vercel.app/" target="_blank">
   <img src="./assets/portfolio-preview.png" alt="Muskan Suman Portfolio Preview" width="100%" />
 </a>
 
