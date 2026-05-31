@@ -19,7 +19,7 @@
 </a>
 
 <p align="center">
-  <a href="https://muskansuman-ai.vercel.app/"><strong>🔗 View Live Portfolio →</strong></a>
+  <a href="https://muskansuman.vercel.app/"><strong>🔗 View Live Portfolio →</strong></a>
 </p>
 
 ---
